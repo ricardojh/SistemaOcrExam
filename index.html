@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+
+  
+
+    
+
+    <title>Dasboard</title>
+</head>
+<body ng-app="appTareas">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="barra-lateral col-12 col-sm-auto">
+                <div class="logo">
+                    <h2>Dasboard</h2>
+                </div>
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href=""> <i class="icon-home"></i> <span>Inicio</span></a>
+                    <a ui-sref= "clase"> <i class="icon-graduation-cap"></i> <span>Clases</span></a>
+                    <a href=""> <i class="icon-users"></i> <span>Alumnos</span></a>
+                    <a href=""> <i class="icon-doc-text"></i> <span>Evaluación</span></a>
+                    <a href=""> <i class="icon-upload"></i> <span>Subir Notas</span></a>
+                    <a href=""> <i class="icon-chart-bar"></i> <span>Reporte</span></a>
+                    <a href=""> <i class="icon-cog-alt"></i> <span>Configuraciones</span></a>
+                    <a href=""> <i class="icon-logout"></i> <span>Salir</span></a>
+                </nav>
+            </div>
+            <main class="main col">
+                <div class="row">
+                    <div class="columna col-lg-7">
+                        <div class="widget nueva_entrada">
+                            
+                            <div class="d-flex" justify-content-end>
+                                <button><i class="icon icon-edit" ui-sref="clase.html" >Enviar</i></button>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Lunes</h4>
+                                  <p class="card-text">Evaluación. <br> Paralelo:10mo <br> Materia: Ingles
+    
+                                  </p>
+                                  <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>
+                                </div>
+                              </div>
+    
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Martes</h4>
+                                  <p class="card-text">Sin Eventos</p>
+                                </div>
+                              </div>
+    
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Miercoles</h4>
+                                  <p class="card-text">Sin Eventos</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Jueves</h4>
+                                  <p class="card-text">Sin Eventos</p>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Viernes</h4>
+                                  <p class="card-text">Sin Eventos</p>
+                                </div>
+                              </div>
+                        </div>
+                        
+
+                        <div class="container col-md-4 col-md-offset-4">
+                            <ui-view></ui-view>
+                        </div>
+                        
+
+                        </div>
+
+                       
+                    <div class="columna col-lg-5">
+                        <div class="widget estadisticas">
+                            <h3 class="titulo">Calendario</h3>
+                            <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Card title</h4>
+                                  <p class="card-text">Sin Eventos</p>
+                                  <a href="#" class="card-link">Card link</a>
+                                  <a href="#" class="card-link">Another link</a>
+                                </div>
+                              </div>
+                        </div>
+
+
+                        <form action="/action_page.php">
+                            Birthday:
+                            <input type="date" name="bday">
+                            <input type="submit">
+                          </form> 
+                    </div>
+
+                   
+                </div>
+                     
+            </main>
+        </div>
+    </div>
+    
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
